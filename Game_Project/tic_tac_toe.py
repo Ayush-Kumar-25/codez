@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import messagebox
 
 class TicTacToe(tk.Frame):
     def __init__(self, master=None):
@@ -15,7 +16,7 @@ class TicTacToe(tk.Frame):
         for i in range(3):
             row = []
             for j in range(3):
-                button = tk.Button(self, text=" ", bg = "black", fg = "white", font=("Helvetica", 24), width=4, height=2,
+                button = tk.Button(self, text=" ", bg="black", fg="white", font=("Helvetica", 24), width=4, height=2,
                                    command=lambda i=i, j=j: self.play_move(i, j))
                 button.grid(row=i+1, column=j+1)
                 row.append(button)
@@ -29,9 +30,9 @@ class TicTacToe(tk.Frame):
         # create scoreboard labels
         self.score_label = tk.Label(self, text="Score:", font=("Helvetica", 16))
         self.score_label.grid(row=0, column=0)
-        self.player1_label = tk.Label(self, text="Player 1: 0", bg = "blue", fg = "white", font=("Helvetica", 16))
+        self.player1_label = tk.Label(self, text="Player 1: 0", bg="blue", fg="white", font=("Helvetica", 16))
         self.player1_label.grid(row=1, column=0)
-        self.player2_label = tk.Label(self, text="Player 2: 0", bg = "blue", fg = "white", font=("Helvetica", 16))
+        self.player2_label = tk.Label(self, text="Player 2: 0", bg="blue", fg="white", font=("Helvetica", 16))
         self.player2_label.grid(row=2, column=0)
         
     def reset_game(self):
@@ -55,8 +56,10 @@ class TicTacToe(tk.Frame):
                 self.player_turn = 1
         
         # check if game is won or tied
-        if self.check_win() or self.check_tie():
-            self.game_over()
+        if self.check_win():
+            self.game_over(True)
+        elif self.check_tie():
+            self.game_over(False)
             
     def check_win(self):
         # check rows
@@ -85,11 +88,15 @@ class TicTacToe(tk.Frame):
                     return False
         return True
     
-    def game_over(self):
+    def game_over(self, won):
         for i in range(3):
             for j in range(3):
                 self.cells[i][j].configure(state="disabled")
-        self.reset_button.configure(state="normal")
+        if won:
+            winner = "Player 1" if self.player_turn == 2 else "Player 2"
+            messagebox.showinfo("Game Over", f"{winner} has won the game!")
+        else:
+            messagebox.showinfo("Game Over", "The game is tied!")
         
     def update_score(self, player):
         if player == 'X':
