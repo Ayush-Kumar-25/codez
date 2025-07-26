@@ -47,3 +47,6 @@ A simple and responsive 2-player **Tic Tac Toe** game built using **Python Tkint
 - Reset Game: Clears the board, keeps scores.
 
 - Quit: Exits the application.
+
+# 📜 License
+- This project is for educational and personal use.
