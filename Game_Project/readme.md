@@ -60,7 +60,9 @@ A simple Python desktop application with a game launcher GUI that lets you play 
 ## 📸 Screenshot
 
 ![alt text](game_launcher.png)
+
 ![alt text](tic_tac_toe.png)
+
 ![alt text](rock_paper_scissor.png)
 
 # 📜 License
