@@ -1,52 +1,67 @@
-# 🎮 Tic Tac Toe Game (Python + Tkinter)
+# 🎮 Game Launcher: Tic Tac Toe & Rock Paper Scissors
 
-A simple and responsive 2-player **Tic Tac Toe** game built using **Python Tkinter**.
+A simple Python desktop application with a game launcher GUI that lets you play **Tic Tac Toe** (with Neon style and AI opponent) and **Rock Paper Scissors** (vs computer) using Tkinter.
 
-## 🖥️ Features
+---
 
-- 3x3 grid with clickable buttons
-- Two-player support (Player X and Player O)
-- Auto turn-switching
-- Score tracking for both players
-- Game reset option
-- Tie detection
-- Visually highlights winning combination
-- Responsive GUI layout with dynamic resizing
-- Quit via menu
-
-## 🏗️ Tech Stack
+# 🏗️ Tech Stack
 
 - **Language**: Python 3
 - **GUI Framework**: Tkinter (built-in)
 
+## 🖥️ Features
+
+### ✅ Tic Tac Toe
+- Neon-themed UI with vibrant colors.
+- Two game modes:
+  - Two Player (Local multiplayer)
+  - Play vs Computer (AI uses Minimax algorithm for unbeatable gameplay)
+- Score tracking for Player X and Player O.
+- Option to select who starts first (Human or Computer).
+- Visual highlights of winning combinations.
+- Responsive grid buttons.
+
+### ✅ Rock Paper Scissors
+- Modern dark-themed interface.
+- Large emoji-based buttons for Rock 🪨, Paper 📄, and Scissors ✂️.
+- Real-time score tracking: Player wins, Computer wins, and ties.
+- Computer randomly selects a move.
+- Restart and Quit buttons.
+- Hover effects on buttons for better UX.
+
+### ✅ Game Launcher
+- Simple launcher GUI to select either game or quit.
+- Clean and colorful interface.
+- Easy to extend for additional games.
+
+---
+
+## Installation
+
+1. Make sure you have Python 3 installed.
+2. Clone or download this repository.
+3. No external dependencies are required besides Python’s built-in `tkinter` module.
+
+---
+
+## ▶️ How to Run
+
+- Run the launcher script to start:
+
+  ```bash
+  python game_launcher.py
+
+# 🧠 Game Logic
+-In Tic Tac Toe, use the menu to switch modes and reset the game.
+-In Rock Paper Scissors, select your move by clicking the emoji buttons.
+-Both games track scores during the session.
+-Close each game window or use Quit to exit.
+
 ## 📸 Screenshot
 
-![Tic Tac Toe GUI](screenshot.png)
-
-## 🚀 How to Run
-
-1. Make sure you have **Python 3.x** installed.
-
-2. Clone or download the `.py` file.
-
-3. Run the script:
-
-   ```bash
-   python tic_tac_toe.py
-   
-# 🧠 Game Logic
-- Players take turns clicking on a 3x3 grid.
-
-- First to align 3 symbols (X or O) in a row, column, or diagonal wins.
-
-- If all 9 boxes are filled and no player wins, the game ends in a tie.
-
-- Winning player's score updates in real time.
-
-# 🛠️ Menu Options
-- Reset Game: Clears the board, keeps scores.
-
-- Quit: Exits the application.
+![alt text](game_launcher.png)
+![alt text](tic_tac_toe.png)
+![alt text](rock_paper_scissor.png)
 
 # 📜 License
 - This project is for educational and personal use.
