@@ -36,7 +36,7 @@ A simple Python desktop application with a game launcher GUI that lets you play 
 
 ---
 
-## Installation
+## 🚀 Installation
 
 1. Make sure you have Python 3 installed.
 2. Clone or download this repository.
