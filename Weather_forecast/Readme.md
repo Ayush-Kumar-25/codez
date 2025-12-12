@@ -91,7 +91,7 @@ Built using Flask with templates:
 
 ---
 
-## 🖼️ Screenshots (Add Later)
+## 🖼️ Screenshots
 
 ![alt text](Weather_1.png)
 ![alt text](Weather_2.png)
@@ -101,3 +101,4 @@ Built using Flask with templates:
 ## 📜 License
 
 - This project is for educational and personal use.
+
