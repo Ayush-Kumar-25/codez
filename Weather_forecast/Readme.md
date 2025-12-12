@@ -59,6 +59,12 @@ Built using Flask with templates:
 
 ---
 
+## 🗄️ Database
+- SQLite file auto-creates:
+- weather_forecast.db
+
+---
+
 ## 📦 Installation
 1️⃣ Install Dependencies
  - pip install flask requests pillow python-dotenv
@@ -71,21 +77,15 @@ Built using Flask with templates:
 
 ---
 
-## 🗄️ Database
-- SQLite file auto-creates:
-- weather_forecast.db
-
----
-
 # 🧠 How It Works (Logic Summary)
 
 1. Fetch latitude/longitude from OpenWeatherMap Geo API
 2. Fetch 5-day/3-hour forecast
 3. Group by date (7 days)
 4. Compute:
-   - Average temperature
-   - Average humidity
-   - Most common condition
+- Average temperature
+- Average humidity
+- Most common condition
 5. Save to database
 6. Generate PNG/PDF report
 
@@ -101,3 +101,4 @@ Built using Flask with templates:
 ## 📜 License
 
 - This project is for educational and personal use.
+
