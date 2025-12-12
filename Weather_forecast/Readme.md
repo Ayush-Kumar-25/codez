@@ -59,14 +59,13 @@ Built using Flask with templates:
 
 ---
 
-
----
-
 ## 🔐 API Key Setup (Safe Method)
 
 Create a `.env` file (this file is **NOT** pushed to GitHub):
 
 api_key=YOUR_OPENWEATHERMAP_API_KEY
+
+---
 
 ## 📦 Installation
 1️⃣ Install Dependencies
@@ -75,10 +74,11 @@ pip install flask requests pillow python-dotenv
 2️⃣ Run App
 python app.py
 
-
 Visit:
 
 http://127.0.0.1:5000/
+
+---
 
 ## 🗄️ Database
 
@@ -86,9 +86,13 @@ SQLite file auto-creates:
 
 weather_forecast.db
 
+---
+
 ## 🖼️ Screenshots (Add Later)
 <img src="screenshot1.png" width="500">
 <img src="screenshot2.png" width="500">
+
+---
 
 ## 🧠 How It Works (Logic Summary)
 
@@ -110,7 +114,10 @@ Save to database
 
 Generate PNG/PDF report
 
+---
+
 ## 📄 License
 
 This project is for educational and personal use.
+
 
