@@ -96,28 +96,29 @@ weather_forecast.db
 
 ## 🧠 How It Works (Logic Summary)
 
-Fetch latitude/longitude from OpenWeatherMap Geo API
+1. Fetch latitude/longitude from OpenWeatherMap Geo API
 
-Fetch 5-day/3-hour forecast
+2. Fetch 5-day/3-hour forecast
 
-Group by date (7 days)
+3. Group by date (7 days)
 
-Compute:
+4. Compute:
 
-Average temperature
+   - Average temperature
 
-Average humidity
+   - Average humidity
 
-Most common condition
+   - Most common condition
 
-Save to database
+5. Save to database
 
-Generate PNG/PDF report
+6. Generate PNG/PDF report
 
 ---
 
 ## 📄 License
 
 This project is for educational and personal use.
+
 
 
