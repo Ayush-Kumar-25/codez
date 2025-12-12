@@ -60,30 +60,6 @@ Built using Flask with templates:
 
 ---
 
-## 🧩 Folder Structure
-
-
-
-Weather/
-│
-├── app.py
-├── weather_forecast.db
-├── post.png # Base template for weather image
-├── Inter.ttf # Font file
-├── .env # Stores API key (NOT pushed to GitHub)
-├── templates/
-│ ├── index.html
-│ ├── filter_city.html
-│ ├── delete_city.html
-│ ├── forecast_step1.html
-│ ├── forecast_step2.html
-│ ├── forecast_step3.html
-│
-└── generated_reports/ # PNG and PDF files (optional)
-
-
----
-
 ## 🔐 API Key Setup (Safe Method)
 
 Create a `.env` file (this file is **NOT** pushed to GitHub):
@@ -156,4 +132,5 @@ This project is licensed under the MIT License.
 
 Ayush Kumar
 Weather Forecast Flask App
+
 GitHub: your username here
