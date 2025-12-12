@@ -83,9 +83,9 @@ Built using Flask with templates:
 2. Fetch 5-day/3-hour forecast
 3. Group by date (7 days)
 4. Compute:
-  - Average temperature
-  - Average humidity
-  - Most common condition
+   - Average temperature
+   - Average humidity
+   - Most common condition
 5. Save to database
 6. Generate PNG/PDF report
 
@@ -101,5 +101,3 @@ Built using Flask with templates:
 ## 📜 License
 
 - This project is for educational and personal use.
-
-
