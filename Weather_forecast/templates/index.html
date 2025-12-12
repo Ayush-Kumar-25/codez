@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Latest Weather Forecast</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f7f8;
+            color: #333;
+            margin: 30px auto;
+            max-width: 900px;
+            padding: 0 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0c4a6e;
+            margin-bottom: 20px;
+            letter-spacing: 1.5px;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            background-color: #0c4a6e;
+            color: white;
+            padding: 10px 18px;
+            margin: 0 8px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #074165;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+            background: white;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #0c4a6e;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        tr:hover {
+            background-color: #f1f9ff;
+        }
+    </style>
+</head>
+<body>
+    <h1>ALL WEATHER RECORDS</h1>
+    <nav>
+        <a href="/filter">Filter City</a>
+        <a href="/delete">Delete Data</a>
+        <a href="/run_forecast">Run Weather Forecast</a>
+    </nav>
+    <table>
+        <thead>
+            <tr>
+                <th>City</th>
+                <th>Country</th>
+                <th>Temperature (°C)</th>
+                <th>Humidity (%)</th>
+                <th>Fetched On</th>
+                <th>Forecast For</th>
+                <th>Condition</th>
+                <th>Icon</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+            <tr>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[3] }}</td>
+                <td>{{ row[4] }}</td>
+                <td>{{ row[5] }}</td>
+                <td>{{ row[6] }}</td>
+                <td>{{ row[7] }}</td> 
+                <td>
+                   <img src="https://openweathermap.org/img/wn/{{ row[8] if row|length > 8 else '01d' }}@2x.png" alt="{{ row[7] }}" width="50">
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
