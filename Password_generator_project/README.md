@@ -59,7 +59,7 @@ git clone https://github.com/Ayush-Kumar-25/My_Projects/tree/main/Password_gener
 2. Navigate to the project directory
    
 ```bash
-cd PasswordGenerator
+cd Password_generator_project
 ```
 
 3. Install dependencies
