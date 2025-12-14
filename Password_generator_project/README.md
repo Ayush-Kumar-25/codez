@@ -1,6 +1,6 @@
-Personal Password Generator
+# Personal Password Generator
 
-A secure and customizable password generator desktop application developed using Python and Tkinter. This project was completed as a personal project during college to learn GUI development, file handling, and secure password generation techniques.
+## A secure and customizable password generator desktop application developed using Python and Tkinter. This project was completed as a personal project during college to learn GUI development, file handling, and secure password generation techniques.
 
 The goal of the project is to generate strong, medium, or weak passwords, check their strength, save them for future use, and provide easy copy-to-clipboard functionality through a simple GUI.
 
